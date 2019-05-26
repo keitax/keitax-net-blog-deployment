@@ -4,17 +4,20 @@ azs:
     availability_zone: ap-northeast-1a
 
 vm_types:
-- name: micro
+- name: default
   cloud_properties:
     instance_type: t2.micro
     ephemeral_disk: {size: 8000, type: gp2}
+    spot_bid_price: 0.01
 
 networks:
-- name: private
+- name: default
   type: manual
   subnets:
   - range: 10.2.0.0/24
     gateway: 10.2.0.1
+    reserved:
+    - "10.2.0.0-10.2.0.3"
     az: z1
     cloud_properties:
       subnet: subnet-0feb5dc49b06bee62
@@ -24,5 +27,5 @@ compilation:
   workers: 1
   reuse_compilation_vms: true
   az: z1
-  vm_type: micro
-  network: private
+  vm_type: default
+  network: default
