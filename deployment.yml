@@ -1,4 +1,4 @@
-name: keitax-net-blog
+name: keitam-blog
 
 releases:
 - name: airlog
@@ -24,11 +24,11 @@ instance_groups:
     release: airlog
     properties:
       airlog:
-        site_title: keitax.net Blog
-        footnote: "© 2019 [Keita Mizuochi](https://twitter.com/keitax_)"
+        site_title: keitam.net Blog
+        footnote: "© 2019 [Keita Mizuochi](https://twitter.com/keitam913)"
         blog_dsn: ((airlog.blog_dsn))
         github_api:
-          post_repository_endpoint: https://api.github.com/repos/keitax/blog-posts
+          post_repository_endpoint: https://api.github.com/repos/keitam913/blog-posts
   vm_type: default
   stemcell: default
   networks:

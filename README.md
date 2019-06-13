@@ -1,2 +1,3 @@
-# keitax-net-blog-deployment
-A bosh deployment manifest of keitax.net Blog
+# keitam-blog-deployment
+
+A bosh deployment manifest of keitam's Blog
