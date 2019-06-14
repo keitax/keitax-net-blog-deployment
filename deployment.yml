@@ -24,7 +24,7 @@ instance_groups:
     release: airlog
     properties:
       airlog:
-        site_title: keitam.net Blog
+        site_title: keitam.com Blog
         footnote: "© 2019 [Keita Mizuochi](https://twitter.com/keitam913)"
         blog_dsn: ((airlog.blog_dsn))
         github_api:
